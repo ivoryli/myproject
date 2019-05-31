@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+
+    <style>
+        div{
+            background-color:orange;
+            font-size:20px;
+            color:white;
+        }
+
+        a{
+            color:white;
+            /*取消超链接默认下划线*/
+            text-decoration:none;
+        }
+
+        a:hover,span:hover{
+            /*鼠标滑过时的状态*/
+            background-color:red;
+        }
+
+        ul,ol{
+            /*取消默认的内边距*/
+            padding:0;
+            /*取消列表的项目符号*/
+            list-style:none;
+            background:pink;
+        }
+
+        ol{
+            /*设置隐藏*/
+            display:none;
+        }
+
+        ul>li:hover ol{
+           display:block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <span>天猫</span>
+        <a href="">淘宝首页</a>
+        <a href="">我的淘宝</a>
+        <a href="">购物车</a>
+        <a href="">收藏夹</a>
+        <a href="">商品分类</a>
+        <a href="">卖家中心</a>i
+        <a href="">联系客服</a>
+        <a href="">网站导航</a>
+    </div>
+
+    <ul>
+        <li>
+            北京
+            <ol>
+                <li>上海</li>
+                <li>广州</li>
+                <li>深圳</li>
+            </ol>
+        </li>
+    </ul>
+
+
+
+  <!--<table align="right" border="1px">-->
+      <!--<tr>-->
+          <!--<td><a href="#">淘宝首页</a></td>-->
+          <!--<td><a href="#">我的淘宝</a></td>-->
+          <!--<td><a href="#">购物车</a></td>-->
+          <!--<td><a href="#">收藏夹</a></td>-->
+          <!--<td><a href="#">商品分类</a></td>-->
+          <!--<td><a href="#">卖家中心</a></td>-->
+          <!--<td><a href="#">联系客服</a></td>-->
+          <!--<td><a href="#">网站导航</a></td>-->
+          <!--<td>-->
+            <!--<select name="city">-->
+            <!--<option value="bj">北京</option>-->
+            <!--<option value="sh">上海</option>-->
+            <!--<option value="gz">广州</option>-->
+            <!--<option value="sz">深圳</option>-->
+            <!--</select>-->
+          <!--</td>-->
+
+      <!--</tr>-->
+
+
+  <!--</table>-->
+</body>
+</html>

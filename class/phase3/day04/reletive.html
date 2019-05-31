@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #box{
+            width:500px;
+            height:500px;
+            background:orange;
+            margin:50px auto;
+            /*position:relative;*/
+        }
+        #d1{
+            width:200px;
+            height:200px;
+            background:red;
+            position:absolute;
+            top:0;
+            left:0;
+
+            /*position:relative;*/
+            /*top:100px;*/
+            /*left:100px;*/
+        }
+        body{
+            position:relative;
+            /*处理子元素的margin-top作用与父元素上*/
+            /*border-top:1px solid blue;*/
+        }
+    </style>
+
+</head>
+<body>
+<!--
+    定位布局
+    1)定位用于实现元素显示位置的调整
+    2)属性:position
+       取值:relative/absolute/fixed
+       使用:元素设置position属性之后,才能称为已定位的元素,已定位的元素可以结合偏移属性调整显示位置
+    3)偏移属性:
+             top    设置距离参照物顶部的偏移量
+             left
+             right
+             bottom
+    4)分类
+        1.相对定位(relative)
+           设置相对定位的元素会参照它在文档中的原始位置偏移
+-->
+    <div id="box">
+        <div id="d1"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>增加管理员</h1>
+
+<form action="../day01/first.html" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>姓名:</td>
+            <td><input type="text" name="user" maxlength="10"></td>
+            <td>10个字符以内</td>
+        </tr>
+
+        <tr>
+            <td>密码:</td>
+            <td><input type="password" name="pwd" maxlength="10"></td>
+            <td>10个字符以内</td>
+        </tr>
+
+        <tr>
+            <td>性别:</td>
+            <td colspan="2">
+                <input id="boy" type="radio" name="sex" value="boy"><label for="boy">男</label>
+                <input id="girl" type="radio" name="sex" value="girl"><label for="girl">女</label>
+            </td>
+            <!--<td></td>-->
+        </tr>
+
+        <tr>
+            <td>角色:</td>
+            <td>
+                <input type="checkbox" name="role" value="super">超级管理员
+                <br>
+                <input type="checkbox" name="role" value="bill">账单管理员
+            </td>
+            <td>至少选一个角色</td>
+        </tr>
+
+        <tr>
+            <td>
+                头像:
+            </td>
+            <td colspan="2">
+                <input type="file" name="uimg">
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="保存">
+                <input type="reset" value="重填">
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //转换字符串
+        var a = 100;
+        var b = true;
+        var s1 = a.toString();
+        var s2 = b.toString();
+        console.log(s1,typeof s1);
+        console.log(s2,typeof s2);
+        //转换number
+        var n1 = "12a";
+        var n2 = "120";
+        console.log(Number(n1),Number(n2),Number('hello'));
+        console.log(Number(true),Number(false),Number("true"));
+
+        //parseInt()/parseFloat()
+        console.log(parseInt(15.3));
+        console.log(parseInt("123hello"));
+        console.log(parseInt("h123"));
+        console.log(parseInt(true));//NaN
+        console.log(parseInt("true"));//NaN
+
+        console.log(parseFloat("15.3"));//15.3
+        console.log(parseFloat("a15.3"));//NaN
+        console.log(parseFloat("15.3a"));//15.3
+        console.log(parseFloat("15.3.5"));//15.3
+
+        //Boolean()
+        console.log(Boolean(1));
+        console.log(Boolean("10"));
+        console.log(Boolean(" "));//空字符为真
+        //"零"为假
+        console.log(Boolean(0));//false
+        console.log(Boolean(0,0));//false
+        console.log(Boolean(""));//false
+        console.log(Boolean(undefined));//false
+        console.log(Boolean(NaN));//false
+        console.log(Boolean(null));//false
+
+        //特殊
+        console.log(Number(undefined));//NaN
+        console.log(Number(null));//0
+
+        //自动类型转换
+        var r1 = 10 + 5;
+        var r2 = "10" + "5";//"105"
+        var r3 = "20" + 5;//"205"
+        var r4 = true + "5";//"true5"
+        var r5 = null + "5";//"null5"
+        var r6 = undefined + "5";//"undefined5"
+        var r7 = 10 + 5 + "hello";//"15hello"
+        var r8 = 10 + "hello" + 5;//"10hello5"
+
+        var res1 = "10" - 5;//5
+        //NaN参与数学运算,结果一律NaN
+        var res2 = "10a" - 5;//Number("10a") -5,NaN - 5,NaN
+        var res3 = "10" - true;//9
+        var res4 = "10" + false;//"10false"
+        var res5 = true + true;//2
+        //console.log(res5)
+        /*
+            undefined + 10    //NaN
+            null + 10         //10
+            true + 10         //11
+         */
+    </script>
+</head>
+<body>
+
+</body>
+</html>

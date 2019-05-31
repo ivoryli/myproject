@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+            width:300px;
+            height:100px;
+        }
+        #d1{
+            border:solid;
+        }
+
+        #d2{
+            border-top:10px solid red;
+        }
+
+        #d3{
+            border-bottom:10px dotted green;
+        }
+
+        #d4{
+            border-left:10px dashed blue;
+        }
+
+        #d5{
+            border-right:10px double orange;
+        }
+        #d6{
+            border:10px dotted yellow;
+        }
+
+        #d7,i{
+            /*取消标题的默认外边距*/
+            margin:0;
+            display:inline-block;
+            width:0;
+            height:0;
+            /*border-top:50px solid green;*/
+            /*border-left:50px solid rgba(0,0,0,0);*/
+            /*border-right:50px solid transparent;!*透明*!*/
+
+            border:20px solid transparent;
+            border-top:20px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="d1">一</h1>
+    <h1 id="d2">二</h1>
+    <h1 id="d3">三</h1>
+    <h1 id="d4">四</h1>
+    <h1 id="d5">五</h1>
+    <h1 id="d6">六</h1>
+    <h1 id="d7"></h1>
+    <!--行内元素拼接三角标时,默认不能手动调宽高,自带高度(有字体大小决定),可以设置font-size:0;
+    去掉默认高度;或者转换元素类型,转成块元素/行内块元素设置尺寸为0
+    转换元素类型:
+       属性display
+       取值:
+          block块元素
+          inline行内元素
+          inline-block行内块元素
+          none隐藏元素
+          -->
+    <i></i>
+</body>
+</html>

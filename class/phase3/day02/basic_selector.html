@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        h1{
+            color:green;
+        }
+        #a{
+            color:yellow;
+        }
+
+        #b{
+            background-color: darksalmon;
+        }
+
+        .c1{
+            background-color:gray;
+        }
+
+        .c2{
+            /*设置文本的水平对齐方式,默认居左*/
+            text-align:center;
+        }
+
+        /*选择器组合使用*/
+        p.c1{ /*匹配类名为C1的p元素*/
+            text-align:right;
+        }
+
+        .c1p{
+            /*匹配类名为c1p的元素,没有匹配到*/
+            color:gold;
+        }
+
+        #a,.c1,p{
+            font-size:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="a">小泽1</h1>
+    <h1 id="b">小泽2</h1>
+    <h1 class="c1 c2">小泽3</h1>
+    <h1 class="c1">泽4</h1>
+
+    <p class="c1">明年今日</p>
+
+</body>
+</html>

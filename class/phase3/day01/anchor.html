@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--用户可以点击超链接,跳转至其他的资源文件-->
+
+<!--href属性必填,用于指定连接地址,网络路径必须写协议
+    target属性选填,用于设置目标文件的打开方式,默认在当前窗口打开,可以设置新建窗口打开-->
+<a href="first.html" target="_blank">first</a>
+<a href="http://www.baidu.com">百度</a>
+<!--图片超链接-->
+
+<a href="img.html">
+    <img src="image/index_banner1.jpg" width="600px">
+</a>
+
+<!--href的特殊取值-->
+<!--空表示刷新-->
+<a href="">href=""</a>
+<!--#表示描点,链接至本页,不会刷新,但会修改url-->
+<a href="#">href="#"</a>
+<!--javascript:void(0)阻止超链接默认的点击跳转功能,允许自定义点击事件-->
+<a href="javascript:void(0)">javascript:void(0)</a>
+
+
+
+</body>
+</html>

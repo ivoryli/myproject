@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //声明变量
+        var a = 10;
+        var b;
+        b = 100;
+        var a1 = 20, a2 = 30, a3 = 50;
+        var b1,b2,b3;
+        b1 = "10";
+        b2 = "20";
+        //变量声明时可以省略关键字var,一旦省略关键字,一律为全局变量
+        age = 20;
+        //变量声明为赋值,默认为undefined
+        var username;
+        console.log(username);
+        //访问为声明,未赋值的变量
+        console.log(n);  //报错
+        console.log(num);  //undefined
+        var n;
+        //变量提升,浏览器在执行js代码之前会检索所有的var关键字,只要在程序中有变量的声明,就不会报错,默认为undefined,
+        var num;//var num = 100;结果还是undefined
+
+        //常量
+        const PI = 3.14;
+        console.log(PI);
+        var r = 10;
+        var len = 2 * PI * r;
+        var s = PI * r * r;
+        //保留小数位 toFixed(n)
+        len = len.toFixed(2);
+        console.log(len,s);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

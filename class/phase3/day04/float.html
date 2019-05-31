@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width:500px;
+            height:500px;
+            background:orange;
+        }
+
+        #d1,#d2,#d3{
+            width:200px;
+            height:200px;
+            background:red;
+        }
+        #d1{
+            float:left;
+            /*height:300px;*/
+        }
+
+        #d2{
+            background:greenyellow;
+            float:left;
+            height:300px;
+        }
+        #d3{
+            background:blue;
+            float:left;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    浮动元素会从它在文档中的原始位置脱离文档流,"悬浮"在父元素的上方,按照浮动方向依次停靠在前一个元素的边缘
+    元素脱流之后,在文档中不占位,可以手动设置宽高
+    "文字"环绕效果:浮动元素会遮挡正常元素的位置,但不影响内容显示,正常内容会围绕在浮动元素周围显示
+    -->
+    <div id="box">
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+    </div>
+</body>
+</html>

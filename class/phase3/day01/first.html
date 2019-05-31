@@ -1,0 +1,74 @@
+<!--HTML大小写不敏感,推荐使用小写-->
+<!--HTML的文档类型声明-->
+<!DOCTYPE html>
+<!--文档开始 页面中所有的内容都应该写在html标签中-->
+<html lang="en">
+<!--文档头部,可以设置小图标,网页标题,显示在浏览器选项卡上;还可以引入资源文件,设置网页相关的信息-->
+<head>
+    <!--meta标签可以用于设置网页附加信息,网页编码类型,关键字,网页描述，开发者信息等,借助于标签属性定义-->
+    <meta charset="UTF-8">
+    <!--设置网页标题-->
+    <title>我的第一个网页</title>
+</head>
+
+<!--通过html标签属性调整样式,不具备通用性-->
+<body bgcolor="#ff8c00">
+<b><u>网页主体:所有给客户看的内容都应该写在body中,会渲染在浏览器窗口中</u></b>
+
+<!--描点链接:连接至当前页面的指定位置-->
+<a href="#button">button</a>
+
+<!--标题,自带加粗效果,字号逐级减少-->
+<h1 align="center">一级标题</h1>
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+<h4>四级标题</h4>
+<h5>五级标题</h5>
+<h6>六级标题</h6>
+<!--允许自定义标签,自定义标签属性-->
+<h7 aa = "bb">自定义</h7>
+
+<!--段落-->
+<p>段落文本</p>
+
+<!--普通文本-->
+<span>span</span>
+<label>label</label>
+<b>bold加粗</b>
+<!--break换行-->
+<br>
+<!--水平分隔线-->
+<hr>
+<strong>strong加粗</strong>
+<i>italic斜体</i>
+<u>underline下划线</u>
+
+<p>
+    已选择
+    <span>10</span>
+    件商品
+</p>
+
+<!--字符实体
+&lt;    <
+&gt;    >
+&copy;  ©  版权
+&yen;   ￥ 人民币
+&nbsp;  空格
+-->
+<h1>HTML&lt;DAY01&gt;</h1>
+<h1>版权所有&copy;价格&yen;100</h1>
+<h1>©&nbsp;&nbsp;&nbsp;&nbsp;￥</h1>
+
+<!--容器标签-->
+<div>导航栏</div>
+<div>页面主体</div>
+<div>页面底部</div>
+
+<div style="background-color:red;height:2000px"></div>
+
+<!--定义描点,name属性设置锚点名称,自定义锚点链接中,地址使用#(锚点的标志),跟上锚点名称<a herf="#button">5.人物经历</a>-->
+<a name="button"></a>
+</body>
+</html>
+<!--文档结束-->

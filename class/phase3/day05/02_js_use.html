@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="index.js">
+        //网页弹框
+        alert("警告框");//同一个脚本标签script优先使用外链,内嵌的会不执行
+
+    </script>
+</head>
+<body>
+    <!--控制台输出:console.log()-->
+    <h1 onclick="document.write('haha')">点击</h1>
+    <h2 ondblclick="console.log('控制台双击输出')">双击</h2>
+    <script>
+        console.log("body末尾的输出语句");
+        document.write("<h1>动态写入</h1>");
+    </script>
+
+</body>
+</html>
